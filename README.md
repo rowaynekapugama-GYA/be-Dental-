@@ -15,8 +15,8 @@ Upload the whole folder to any static host (Vercel, Netlify, SiteGround, or a su
 ## What's on each page
 
 - Reception photo banner, with the offer panel overlapping it
-- Dental Hub online booking embedded directly under the banner (all "Book online" buttons scroll to it)
-- Preferred provider logos (Medibank, HCF, Smile.com.au), plus HICAPS and Medicare
+- Preferred provider logos (Medibank, HCF, Smile.com.au), plus HICAPS and Medicare, under the banner
+- Dental Hub online booking embedded right after the health funds (all "Book online" buttons scroll to it)
 - Clinic photos, team headshots, FAQs
 - Google map, opening hours with a live "Open now / Closed" badge (Brisbane time), contact details and directions
 
