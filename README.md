@@ -3,14 +3,14 @@
 Four static Google Ads landing pages for bedental.com.au. Plain HTML and CSS, no build step.
 
 ```
-new-patients/index.html
+index.html                    New patients (home page)
 same-day-crowns/index.html
 dental-implants/index.html
 invisalign/index.html
 assets/be-dental-logo.svg
 ```
 
-Upload the whole folder to any static host (Vercel, Netlify, SiteGround, a subdomain such as offers.bedental.com.au). Each page lives at its folder path, e.g. `/dental-implants/`.
+Upload the whole folder to any static host (Vercel, Netlify, SiteGround, a subdomain such as offers.bedental.com.au). The new patient page is the home page at `/`; the others live at their folder paths, e.g. `/dental-implants/`. A row of links in each page's footer switches between the four pages.
 
 ## Before going live
 
