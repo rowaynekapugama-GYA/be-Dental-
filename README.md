@@ -7,17 +7,27 @@ index.html                    New patients (home page)
 same-day-crowns/index.html
 dental-implants/index.html
 invisalign/index.html
-assets/be-dental-logo.svg
+assets/                       Photos, team headshots, health fund logos, Be Dental logo
 ```
 
-Upload the whole folder to any static host (Vercel, Netlify, SiteGround, a subdomain such as offers.bedental.com.au). The new patient page is the home page at `/`; the others live at their folder paths, e.g. `/dental-implants/`. A row of links in each page's footer switches between the four pages.
+Upload the whole folder to any static host (Vercel, Netlify, SiteGround, or a subdomain such as offers.bedental.com.au). The new patient page loads at `/`, and the others live at their folder paths, e.g. `/dental-implants/`. The footer on each page links to all four.
+
+## What's on each page
+
+- Reception photo banner, with the offer panel overlapping it
+- Dental Hub online booking embedded directly under the banner (all "Book online" buttons scroll to it)
+- Preferred provider logos (Medibank, HCF, Smile.com.au), plus HICAPS and Medicare
+- Clinic photos, team headshots, FAQs
+- Google map, opening hours with a live "Open now / Closed" badge (Brisbane time), contact details and directions
+
+The new patient page also has the services grid, facilities gallery, payment plans and the full team.
 
 ## Before going live
 
-- **Forms:** the enquiry forms are design placeholders. Replace each `<form>` with the SmileOX form embed, or point it at the SmileOX endpoint.
-- **Tracking:** add the Google Tag Manager container (GTM-W682F8X2) to each page's `<head>` and `<body>`, then set up call click, form submit and online booking conversions.
-- **Booking link:** pages use `https://apac.dentalhub.online/soe/new/?pid=AUSTC01` (stray `%20` removed from the site's version). Test it.
-- **Placeholders to fill:** `[$NEW PATIENT PRICE]`, `[Offer terms to be confirmed by the practice.]`, `[Implant dentist name, qualifications]`, and the photo placeholder blocks.
+- **Online booking embed:** check the Dental Hub calendar loads inside the page on the live https domain. Some Centaur booking pages redirect to http inside an iframe and get blocked. If that happens, the "Open online booking in a new tab" link under the calendar still works, and we can swap the embed for a button.
+- **Tracking:** add the Google Tag Manager container (GTM-W682F8X2) to each page, then set up call click and booking conversions.
+- **Placeholders to fill:** `[$NEW PATIENT PRICE]` and `[Offer terms to be confirmed by the practice.]`.
 - **Offers to approve:** gap-free check-up for Medibank, HCF and Smile.com.au members; free implant consult with CBCT (normally $119).
+- **Images:** photos are AVIF, which every current browser supports.
 - **Indexing:** pages carry `noindex` so ad pages don't compete with the main site in Google. Remove it if you want them indexed.
 - **Compliance:** keep the AHPRA surgical risk statement on the implant and crown pages. Don't add patient testimonials about clinical care.
