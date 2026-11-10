@@ -15,7 +15,7 @@ Upload the whole folder to any static host (Vercel, Netlify, SiteGround, or a su
 ## What's on each page
 
 - Reception photo banner, with the offer panel overlapping it
-- Preferred provider logos (Medibank, HCF, Smile.com.au), plus HICAPS and Medicare, under the banner
+- Preferred provider logos (Medibank, HCF, Smile.com.au), plus HICAPS, Medicare and a DVA Veteran Card line, under the banner
 - Dental Hub online booking embedded right after the health funds (all "Book online" buttons scroll to it)
 - Clinic photos, team headshots, FAQs
 - Google map, opening hours with a live "Open now / Closed" badge (Brisbane time), contact details and directions
@@ -26,8 +26,9 @@ The new patient page also has the services grid, facilities gallery, payment pla
 
 - **Online booking embed:** check the Dental Hub calendar loads inside the page on the live https domain. Some Centaur booking pages redirect to http inside an iframe and get blocked. If that happens, the "Open online booking in a new tab" link under the calendar still works, and we can swap the embed for a button.
 - **Tracking:** add the Google Tag Manager container (GTM-W682F8X2) to each page, then set up call click and booking conversions.
-- **Placeholders to fill:** `[$NEW PATIENT PRICE]` and `[Offer terms to be confirmed by the practice.]`.
-- **Offers to approve:** gap-free check-up for Medibank, HCF and Smile.com.au members; free implant consult with CBCT (normally $119).
+- **Placeholder to confirm:** `[Offer terms to be confirmed by the practice.]` on the implant page (free implant consult).
+- **Offers to approve:** gap-free check-up for Medibank and HCF members (not Smile.com.au); free implant consult with CBCT (normally $119).
+- **DVA:** shown as text only. DVA does not let health providers use its logo, and ads must not say services are "free", "fully funded" or "DVA pays".
 - **Images:** photos are AVIF, which every current browser supports.
 - **Indexing:** pages carry `noindex` so ad pages don't compete with the main site in Google. Remove it if you want them indexed.
 - **Compliance:** keep the AHPRA surgical risk statement on the implant and crown pages. Don't add patient testimonials about clinical care.
