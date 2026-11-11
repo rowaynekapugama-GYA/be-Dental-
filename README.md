@@ -25,7 +25,7 @@ The new patient page also has the services grid, facilities gallery, payment pla
 ## Before going live
 
 - **Online booking embed:** check the Dental Hub calendar loads inside the page on the live https domain. Some Centaur booking pages redirect to http inside an iframe and get blocked. If that happens, the "Open online booking in a new tab" link under the calendar still works, and we can swap the embed for a button.
-- **Tracking:** add the Google Tag Manager container (GTM-W682F8X2) to each page, then set up call click and booking conversions.
+- **Tracking:** Google Tag Manager container GTM-NVTQ92PG is installed on every page (head script plus body noscript). The pages also push `phone_click`, `book_online_click` and `directions_click` events to the dataLayer, ready to use as GTM triggers for Google Ads conversions. Bookings made inside the embedded Dental Hub calendar can't be seen by GTM, because the calendar runs on Dental Hub's own domain.
 - **DVA:** shown as text only. DVA does not let health providers use its logo, and ads must not say services are "free", "fully funded" or "DVA pays".
 - **Images:** photos are AVIF, which every current browser supports.
 - **Indexing:** pages carry `noindex` so ad pages don't compete with the main site in Google. Remove it if you want them indexed.
